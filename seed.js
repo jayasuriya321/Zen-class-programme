@@ -35,7 +35,7 @@ const seedData = async () => {
     ]);
 
     // ----------------------------
-    // Users
+    // Users (initial)
     // ----------------------------
     const users = await User.insertMany([
       { name: "John", email: "john@gmail.com", mentor_id: mentors[0]._id, codekata_solved: 120 },
@@ -43,8 +43,23 @@ const seedData = async () => {
       { name: "Ravi", email: "ravi@gmail.com", mentor_id: mentors[0]._id, codekata_solved: 95 },
     ]);
 
+    // ----------------------------
+    // Add 16 extra mentees for Sundar (for testing)
+    // ----------------------------
+    const extraUsers = await User.insertMany(
+      Array.from({ length: 16 }).map((_, i) => ({
+        name: `Student${i + 1}`,
+        email: `student${i + 1}@gmail.com`,
+        mentor_id: mentors[0]._id,
+        codekata_solved: Math.floor(Math.random() * 100),
+      }))
+    );
+
     // Assign mentees
-    await Mentor.updateOne({ _id: mentors[0]._id }, { $set: { mentee_ids: [users[0]._id, users[2]._id] } });
+    await Mentor.updateOne(
+      { _id: mentors[0]._id },
+      { $set: { mentee_ids: [...users.map(u => u._id), ...extraUsers.map(u => u._id)] } }
+    );
     await Mentor.updateOne({ _id: mentors[1]._id }, { $set: { mentee_ids: [users[1]._id] } });
 
     // ----------------------------

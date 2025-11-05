@@ -1,8 +1,8 @@
 import mongoose from "mongoose";
 
 const companyDriveSchema = new mongoose.Schema({
-  company_name: String,
-  drive_date: Date,
+  company_name: { type: String, required: true },
+  drive_date: { type: Date, required: true },
   students_appeared: [{ type: mongoose.Schema.Types.ObjectId, ref: "User" }],
 });
 
