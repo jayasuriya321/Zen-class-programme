@@ -1,0 +1,5 @@
+[
+  { "user_id": 1, "task": "HTML page structure", "date": { "$date": "2020-10-12T00:00:00Z" }, "submitted": true },
+  { "user_id": 2, "task": "JS array methods", "date": { "$date": "2020-10-26T00:00:00Z" }, "submitted": false },
+  { "user_id": 3, "task": "JS array methods", "date": { "$date": "2020-10-26T00:00:00Z" }, "submitted": false }
+]

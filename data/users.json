@@ -1,0 +1,5 @@
+[
+  { "_id": 1, "name": "John", "email": "john@gmail.com", "codekata_solved": 120 },
+  { "_id": 2, "name": "Asha", "email": "asha@gmail.com", "codekata_solved": 80 },
+  { "_id": 3, "name": "Ravi", "email": "ravi@gmail.com", "codekata_solved": 95 }
+]

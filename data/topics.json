@@ -1,0 +1,6 @@
+[
+  { "topic": "HTML Basics", "date": { "$date": "2020-10-10T00:00:00Z" } },
+  { "topic": "CSS Layouts", "date": { "$date": "2020-10-15T00:00:00Z" } },
+  { "topic": "JavaScript Functions", "date": { "$date": "2020-10-25T00:00:00Z" } },
+  { "topic": "React Components", "date": { "$date": "2020-11-05T00:00:00Z" } }
+]

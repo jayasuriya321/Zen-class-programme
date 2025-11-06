@@ -1,0 +1,5 @@
+[
+  { "user_id": 1, "date": { "$date": "2020-10-16T00:00:00Z" }, "status": "present" },
+  { "user_id": 2, "date": { "$date": "2020-10-17T00:00:00Z" }, "status": "absent" },
+  { "user_id": 3, "date": { "$date": "2020-10-20T00:00:00Z" }, "status": "absent" }
+]

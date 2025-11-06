@@ -1,0 +1,5 @@
+[
+  { "company_name": "Google", "date": { "$date": "2020-10-20T00:00:00Z" }, "students_appeared": [1, 3] },
+  { "company_name": "Amazon", "date": { "$date": "2020-10-28T00:00:00Z" }, "students_appeared": [2] },
+  { "company_name": "Netflix", "date": { "$date": "2020-11-05T00:00:00Z" }, "students_appeared": [] }
+]
